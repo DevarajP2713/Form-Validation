@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        label{
+            display: inline-block;
+            min-width: 120px;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+        .error{
+            border: 1px solid red;
+            outline: 1px solid red;
+        }
+        .suc{
+            border: 1px solid green;
+            outline: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Create Account</h1>
+
+    <form action="" id="create-account">
+        <div>
+            <label for="f-name">First Name</label>
+            <input type="text" name="fname" id="f-name">
+        </div>
+        <div>
+            <label for="m-name">Middle Name</label>
+            <input type="text" name="mname" id="m-name">
+        </div>
+        <div>
+            <label for="l-name">Last Name</label>
+            <input type="text" name="lname" id="l-name">
+        </div>
+        <div>
+            <label for="email-id">Email Id</label>
+            <input type="text" name="emailid" id="email-id">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="Password" name="Password" id="Password">
+        </div>
+        <div>
+            <label for="c-password">Confirm Password</label>
+            <input type="Password" name="cpassword" id="c-password">
+        </div>
+        <div>
+            <label for="mobilecode">Mobile Number</label>
+            <select name="mobilecode" id="mobilecode">
+                <option value="+91">IND - +91</option>
+                <option value="+86">PAK - +86</option>
+            </select>
+            <input type="number" name="mobileno" id="mobileno">
+        </div>
+        <div>
+            <label for="">Gender</label>
+            <input type="radio" name="gender" id="g-male">
+            <label for="g-male">Male</label> 
+            <input type="radio" name="gender" id="g-female">
+            <label for="g-female">Female</label>
+        </div>
+        <div>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy">
+        </div>
+        <div>
+            <label for="dob">Country</label>
+            <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="IND">India</option>
+                <option value="PAK">Pakistan</option>
+                <option value="AUS">Australia</option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea type="text" name="bio" id="bio"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
